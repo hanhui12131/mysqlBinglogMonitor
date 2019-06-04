@@ -1,0 +1,27 @@
+db:
+  username: root
+  password: hanhui
+  host: 127.0.0.1
+  port: 3306
+  
+db1:
+  driver: com.mysql.jdbc.Driver
+  url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8
+  username: root
+  password: hanhui
+db2:
+  driver: com.mysql.jdbc.Driver
+  url: jdbc:mysql://127.0.0.1:3306/test2?useUnicode=true&characterEncoding=utf8
+  username: root
+  password: hanhui
+  
+spring:
+  activemq:
+    broker-url: tcp://127.0.0.1:61616
+    user: admin
+    password: admin
+  jms:
+    template:    
+      default-destination: dbQuene
+logging:  level:     com.monitor.core: debug    
+    
